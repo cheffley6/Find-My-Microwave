@@ -14,7 +14,7 @@
         width: 100%;
        }
     </style>
-    <title>Find My Microwave</title>
+    <title>Find MYcrowave</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -43,15 +43,13 @@
         <nav>
           <ul class="nav nav-pills pull-right">
             <li role="presentation" class="active"><a href="#">Home</a></li>
-            <li role="presentation"><a href="#">About</a></li>
-            <li role="presentation"><a href="#">Contact</a></li>
           </ul>
         </nav>
         <h3 class="text-muted">Microwaves at Georgia Tech</h3>
       </div>
 
       <div class="jumbotron">
-        <h1>Find My Microwave</h1>
+        <h1>Find MYcrowave</h1>
           <div id="map"></div>
 </div>
 
@@ -79,8 +77,8 @@
               '</div>'+
               '<id="firstHeading" class="firstHeading"><font size="+2"><b>Student Center (5)</font></b>'+
               '<div id="bodyContent">'+
-              '<br/><b><font size = "-1">Second Floor (2) </b>: Two microwaves in the food court near the Dunkin&#39 Donuts' +
-              '<br/><b>First Floor (3) </b>: One microwave next to the Chick-fil-a; one microwave in the back of Burdell&#39s, one in Under the Couch (you will have to ask the worker on duty to use the microwave)</font>'+
+              '<br/><b><font size = "-1">Second Floor (3): </b> Two microwaves in the food court near the Dunkin&#39 Donuts, one in Under the Couch (you will have to ask the worker on duty to use the microwave)' +
+              '<br/><b>First Floor (2): </b> One next to the Chick-fil-a booths; one in the back of Burdell&#39s</font>'+
               '</div>'+
               '</div>';
             var culcinfowin = '<div id="content">'+
@@ -88,7 +86,7 @@
               '</div>'+
               '<id="firstHeading" class="firstHeading"><font size="+2"><b>Clough Undergraduate Learning Commons</font></b>'+
               '<div id="bodyContent">'+
-              '<br/><b><font size = "-1">Room 284</b>: Second floor CULC, requires Buzzcard access(possibly faculty only), locked after hours </font>'+
+              '<br/><b><font size = "-1">Room 284: </b>Second floor CULC, requires Buzzcard access (possibly faculty only), locked after hours </font>'+
               '</div>'+
               '</div>';
             var loveinfowin = '<div id="content">'+
@@ -96,7 +94,7 @@
               '</div>'+
               '<id="firstHeading" class="firstHeading"><font size="+2"><b>Erskine Love Jr. Manufacturing Building</font></b>'+
               '<div id="bodyContent">'+
-              '<br/><font size="-1">First floor atrium under the stairs</font>'+
+              '<br/><b><font size = "-1">First Floor Atrium: </b> Under the stairs</font>'+
               '</div>'+
               '</div>';
             var klausinfowin = '<div id="content">'+
@@ -110,9 +108,9 @@
             var isyeinfowin = '<div id="content">'+
               '<div id="siteNotice">'+
               '</div>'+
-              '<id="firstHeading" class="firstHeading"><font size="+2"><b>ISYE Main(2)</font></b>'+
+              '<id="firstHeading" class="firstHeading"><font size="+2"><b>ISYE Main (2)</font></b>'+
               '<div id="bodyContent">'+
-              '<br/><font size="-1">Side by side in the lobby of the first floor by the doors</font>'+
+              '<br/><b><font size = "-1">First Floor Lobby: </b> Side by side near the doors</font>'+
               '</div>'+
               '</div>';
             var bninfowin = '<div id="content">'+
@@ -126,7 +124,7 @@
             var marcinfowin = '<div id="content">'+
               '<div id="siteNotice">'+
               '</div>'+
-              '<id="firstHeading" class="firstHeading"><font size="+2"><b>MARC</font></b>'+
+              '<id="firstHeading" class="firstHeading"><font size="+2"><b>Georgia Tech Manufacturing Institute</font></b>'+
               '<div id="bodyContent">'+
               '<br/><font size="-1">Confirmation Needed</font>'+
               '</div>'+
@@ -144,15 +142,15 @@
               '</div>'+
               '<id="firstHeading" class="firstHeading"><font size="+2"><b>College of Computing</font></b>'+
               '<div id="bodyContent">'+
-              '<br/><font size="-1">Room 107A which is a helpdesk room. If office hours are not in session, room may be locked.</font>'+
+              '<br/><b><font size = "-1">Room 107A: </b> This room is for 1301/2316 helpdesk. If office hours are not in session, room may be locked.'
               '</div>'+
               '</div>';
             var smithinfowin = '<div id="content">'+
               '<div id="siteNotice">'+
               '</div>'+
-              '<id="firstHeading" class="firstHeading"><font size="+2"><b>D.M. Smith</font></b>'+
+              '<id="firstHeading" class="firstHeading"><font size="+2"><b>D.M. Smith (2)</font></b>'+
               '<div id="bodyContent">'+
-              '<br/><font size="-1">Basement lounge/kitchen near entrance from Freshman Hill</font>'+
+              '<br/><b><font size = "-1">Basement: </b>Lounge/kitchen near entrance from Freshman Hill</font>'+
               '</div>'+
               '</div>';
             var cherreminfowin = '<div id="content">'+
@@ -203,29 +201,29 @@
 
       <div class="row marketing">
         <div class="col-lg-6">
-          <h4><b>Know of a microwave we don't?</b></h4><br>
+          <h4><b>Tell Us About Your Microwaves!</b></h4><br>
             <form method="post" action="mailto:findmymicrowave@gmail.com?subject=New Microwave" enctype="text/plain">
-            <center>Building: <input type="text" style="width: 100px" name="Building"></center><br>
-            <center>Details (ex: room number): <input type="text" style="width: 100px" name="Details"></center><br>
-            <center>Is the room Buzzcard-access only?
-              <input type="radio" name="Buzzcard" value="Yes" />Yes
-              <input type="radio" name="Buzzcard" value="No" />No<br/></center><br>
-            <center><input type="submit" name="submit" value="Submit"></center>
-            </form>
+            Building: 
+            <input type="text" name="Building "><br>
+            <br>Room:    
+            <input type="text" name="Room ">
+            <br><br>Is the room buzzcard-access only?&nbsp
+            <input type="radio" name="Buzzcard Restricted " value=" Yes" /> Yes &nbsp
+            <input type="radio" name="Buzzcard Restricted " value=" No" /> No<br/><br>
+           <input type="submit"> 
+        </div>
+           
+          <div class="col-lg-6">
 
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4><b>Has a microwave been removed?</b></h4><br>
+          <h4><b>But This Microwave been Removed!</b></h4>
             <form method="post" action="mailto:findmymicrowave@gmail.com?subject=Wrong Microwave" enctype="text/plain">
-            <center>Please elaborate: (building, specific location, etc) <input type="text" style="height: 100px" name="Building"></center><br>
-            <center><input type="submit" name="submit" value="Submit"></center>
+            Please enter incorrect location: <br><br><input type="text" style="height: 96px; width:300px;" name="location"><br><br>
+            <input type="submit">
             </br>
             </form>
 
-
       </div>
       </div> <!-- /container -->
-
 
 
     <footer class="footer">
