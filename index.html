@@ -66,8 +66,10 @@
            var bn = {lat: 33.77653850134482, lng: -84.38827822238466};
            var marc = {lat: 33.77755514039634, lng: -84.40134594470521};
            var ibb = {lat: 33.779010, lng: -84.397259};
+           var utc = {lat: 33.774106, lng: -84.398725};
+           var coc = {lat: 33.777523 , lng: -84.397389};
            var smith = {lat: 33.7736495, lng: -84.3951647};
-           var microwave_locations = [studentcenter, culc, love, klaus, isye, bn, marc, ibb, smith];
+           var microwave_locations = [studentcenter, culc, love, klaus, isye, bn, marc,  ibb, utc, coc, smith];
            var map = new google.maps.Map(document.getElementById('map'), {
              zoom: 15,
              center: gtech
@@ -137,6 +139,22 @@
               '<br/><font size="-1">Rear of the building by the vending machines</font>'+
               '</div>'+
               '</div>';
+            var utcinfowin = '<div id="content">'+
+              '<div id="siteNotice">'+
+              '</div>'+
+              '<id="firstHeading" class="firstHeading"><font size="+2"><b>Under the Couch</font></b>'+
+              '<div id="bodyContent">'+
+              '<br/><font size="-1">You will have to ask the worker on duty to use the microwave</font>'+
+              '</div>'+
+              '</div>';
+            var cocinfowin = '<div id="content">'+
+              '<div id="siteNotice">'+
+              '</div>'+
+              '<id="firstHeading" class="firstHeading"><font size="+2"><b>College of Computing</font></b>'+
+              '<div id="bodyContent">'+
+              '<br/><font size="-1">Room 107A which is a helpdesk room. If office hours are not in session, room may be locked.</font>'+
+              '</div>'+
+              '</div>';
             var smithinfowin = '<div id="content">'+
               '<div id="siteNotice">'+
               '</div>'+
@@ -145,9 +163,7 @@
               '<br/><font size="-1">basement lounge/kitchen near entrance from Freshman Hill</font>'+
               '</div>'+
               '</div>';
-            var loc_info = [scinfowin, culcinfowin, loveinfowin, klausinfowin, isyeinfowin, bninfowin, marcinfowin, ibbinfowin, smithinfowin];
-
-
+            var loc_info = [scinfowin, culcinfowin, loveinfowin, klausinfowin, isyeinfowin, bninfowin, marcinfowin, ibbinfowin, utcinfowin, cocinfowin,smithinfowin];
 
             for (var i = 0; i < microwave_locations.length; i++) {
               var marker = new google.maps.Marker({
