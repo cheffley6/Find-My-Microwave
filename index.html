@@ -62,9 +62,12 @@
            var culc = {lat: 33.774953, lng: -84.396295};
            var love = {lat: 33.776727, lng: -84.401842};
            var klaus = {lat: 33.777191, lng: -84.396202};
+           var isye = {lat: 33.7752008, lng: -84.40185020000001};
+           var bn = {lat: 33.77653850134482, lng: -84.38827822238466};
+           var marc = {lat: 33.77755514039634, lng: -84.40134594470521};
            var ibb = {lat: 33.779010, lng: -84.397259};
            var smith = {lat: 33.7736495, lng: -84.3951647};
-           var microwave_locations = [studentcenter, culc, love, klaus, ibb, smith];
+           var microwave_locations = [studentcenter, culc, love, klaus, isye, bn, marc, ibb, smith];
            var map = new google.maps.Map(document.getElementById('map'), {
              zoom: 15,
              center: gtech
@@ -102,6 +105,30 @@
               '<br/><font size="-1">Breakroom on second and third floors near giant stairs</font>'+
               '</div>'+
               '</div>';
+            var isyeinfowin = '<div id="content">'+
+              '<div id="siteNotice">'+
+              '</div>'+
+              '<id="firstHeading" class="firstHeading"><font size="+2"><b>ISYE Main(2)</font></b>'+
+              '<div id="bodyContent">'+
+              '<br/><font size="-1">In the lobby of the first floor by the doors</font>'+
+              '</div>'+
+              '</div>';
+            var bninfowin = '<div id="content">'+
+              '<div id="siteNotice">'+
+              '</div>'+
+              '<id="firstHeading" class="firstHeading"><font size="+2"><b>Barnes and Noble</font></b>'+
+              '<div id="bodyContent">'+
+              '<br/><font size="-1">Second floor</font>'+
+              '</div>'+
+              '</div>';
+            var marcinfowin = '<div id="content">'+
+              '<div id="siteNotice">'+
+              '</div>'+
+              '<id="firstHeading" class="firstHeading"><font size="+2"><b>MARC</font></b>'+
+              '<div id="bodyContent">'+
+              '<br/><font size="-1">Confirmation Needed</font>'+
+              '</div>'+
+              '</div>';
             var ibbinfowin = '<div id="content">'+
               '<div id="siteNotice">'+
               '</div>'+
@@ -118,7 +145,7 @@
               '<br/><font size="-1">basement lounge/kitchen near entrance from Freshman Hill</font>'+
               '</div>'+
               '</div>';
-            var loc_info = [scinfowin, culcinfowin, loveinfowin, klausinfowin, ibbinfowin, smithinfowin];
+            var loc_info = [scinfowin, culcinfowin, loveinfowin, klausinfowin, isyeinfowin, bninfowin, marcinfowin, ibbinfowin, smithinfowin];
 
 
 
